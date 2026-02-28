@@ -653,7 +653,7 @@ async def fetch_listing_status(
         "state": state,
         "apikey": API_KEY,
     }
-    return await _make_api_request(https_params, "json")
+    return await _make_api_request(https_params, "csv")
 
 
 @instrument_tool("earnings_calendar")
